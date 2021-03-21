@@ -1,22 +1,38 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Machine Learning Engineer with Microsoft Azure - Capstone Project
 
-# Your Project Title Here
-
-*TODO:* Write a short introduction to your project.
-
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+This project is part of the Machine Learning Engineer with Microsoft Azure Nanodegree Program by Udacity and Microsoft.
 
 ## Dataset
+The dataset used in this project is the Wisconsin Breast Cancer dataset from Kaggle. Two different models are developed, one model trained using Automated ML (AutoML) and the other model trained and tuned with HyperDrive. The performance of both the models are compared and the best model is deployed. The model is then consumed from the generated REST endpoint.
 
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+The dataset is obtained is the Wisconsin Breast Cancer dataset from Kaggle. The features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. The mean, standard error and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 features. The class distribution is 357 benign, 212 malignant.
+
+Attribute Information:
+
+1) ID number
+2) Diagnosis (M = malignant, B = benign)
+3-32)
+
+Ten real-valued features are computed for each cell nucleus:
+
+a) radius (mean of distances from center to points on the perimeter)
+b) texture (standard deviation of gray-scale values)
+c) perimeter
+d) area
+e) smoothness (local variation in radius lengths)
+f) compactness (perimeter^2 / area - 1.0)
+g) concavity (severity of concave portions of the contour)
+h) concave points (number of concave portions of the contour)
+i) symmetry
+j) fractal dimension ("coastline approximation" - 1)
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+The dataset provides us with a binary classification task that requires us to classify the the given details of the FNA image into two classes: Malignant and Benign. All the attributes excluding the *ID Number* are used for training the model. The column *diagnosis* is the target variable.
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+The dataset is uploaded into this github repository which then is associated with raw github content URL. This URL is used to access the dataset from the workspace.<br>
+https://raw.githubusercontent.com/MonicaSai7/Capstone-Project---Azure-Machine-Learning-Engineer/main/BreastCancerWisconsinDataset.csv
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
