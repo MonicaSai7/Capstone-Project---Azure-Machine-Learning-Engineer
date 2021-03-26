@@ -1,14 +1,13 @@
 import requests
 import json
 
-scoring_uri = 'http://03654a2f-b1a9-446b-b8ee-f65db32e9eb9.southcentralus.azurecontainer.io/score'
-key = 'pomvTgGrto0crdUUArYHiIweHfAKCM9D'
+scoring_uri = 'http://79474822-ba34-4e88-909d-3d900aa9d5fc.southcentralus.azurecontainer.io/score'
+key = 'lcpN75fSfIcv1diPplax5HhGR6gJbxSq'
 
 data = {
     "data":[
         {
-            "Column1": 204,
-            "Column1_1": 204,
+            "id": 204,
             "radius_mean": 12.47,
             "texture_mean": 18.6,
             "perimeter_mean": 81.09,
@@ -41,8 +40,7 @@ data = {
             "fractal_dimension_worst": 0.0875
         },
         {
-            "Column1": 70,
-            "Column1_1": 70,
+            "id": 70,
             "radius_mean": 18.94,
             "texture_mean": 21.31,
             "perimeter_mean": 123.6,

@@ -1,5 +1,5 @@
 {
-    "subscription_id": "c5fc6bff-d037-41f2-9e48-214d71e92b38",
-    "resource_group": "udacity-azurend",
-    "workspace_name": "azurend-capstone"
+    "subscription_id": "f9d5a085-54dc-4215-9ba6-dad5d86e60a0",
+    "resource_group": "aml-quickstarts-141402",
+    "workspace_name": "quick-starts-ws-141402"
 }
