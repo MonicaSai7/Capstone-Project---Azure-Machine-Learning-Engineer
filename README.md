@@ -50,6 +50,7 @@ The configurations for the *AutoMLConfig* instance are defined as:<br>
   Whether to enable early termination if the score is not improving in the short term. Early stopping is triggered if the absolute value of best score calculated is the same for past early_stopping_n_iters iterations, that is, if there is no improvement in score for early_stopping_n_iters iterations. <br><br>
  
 The run details of the AutomatedML run are as below:<br><br>
+<img src="resources/automl_rundetails.png"><br><br>
 <img src="resources/rundetails.png"><br><br>
 
 The different models run during the experiment:<br><br>
@@ -133,7 +134,13 @@ Deploying the best model will allow us to interact with the HTTP API service by 
 The following screenshot shows the real-time endpoint created after the best model is deployed:<br><br>
 <img src="resources/endpoint.png"><br><br>
 
-The endpoint.py script can be used to make a POST request for predicting the label of given records.
+The endpoint.py script can be used to make a POST request for predicting the label of given records. The endpoint.py script contains the data payload that is required to pass through the HTTP request.<br>
+- After the endpoint is deployed, a scoring URI and secret key will be generated.
+- The generated scoring URI and secret key must be added in the endpoint.py script.
+- Then run the endpoint.py script to consume the deployed endpoint.
+
+
+The predict.py python script is used by the endpoint to interact with the registered best model. The data passed in the payload must be JSON serializable and the predict.py extracts data from the JSON body of the request and passes onto the model as input.
 
 ## Screen Recording
 The screencast of the project demo can be viewed [here](https://youtu.be/u6pxAdoeCBA)
