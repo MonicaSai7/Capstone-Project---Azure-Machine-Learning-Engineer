@@ -136,4 +136,4 @@ The following screenshot shows the real-time endpoint created after the best mod
 The endpoint.py script can be used to make a POST request for predicting the label of given records.
 
 ## Screen Recording
-The screencast of the project demo can be viewed [here]https://youtu.be/u6pxAdoeCBA
+The screencast of the project demo can be viewed [here](https://youtu.be/u6pxAdoeCBA)
