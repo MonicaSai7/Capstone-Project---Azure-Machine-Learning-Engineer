@@ -50,6 +50,7 @@ The configurations for the *AutoMLConfig* instance are defined as:<br>
   Whether to enable early termination if the score is not improving in the short term. Early stopping is triggered if the absolute value of best score calculated is the same for past early_stopping_n_iters iterations, that is, if there is no improvement in score for early_stopping_n_iters iterations. <br><br>
  
 The run details of the AutomatedML run are as below:<br><br>
+<img src="resources/automl_rundetails.png"><br><br>
 <img src="resources/rundetails.png"><br><br>
 
 The different models run during the experiment:<br><br>
